@@ -1,0 +1,90 @@
+body{
+	margin:1em;
+	text-align:justify;
+}
+h1{
+	margin-bottom:12px;
+	font-size:2em;
+}
+p{
+	margin-bottom:12px;
+	font-size:1em;
+}
+#flag{
+	display:flex;
+	justify-content:center;
+	margin-bottom:50px;
+}
+.feld{
+	height:30vh;
+	width:33vw;
+}
+#feld1{
+	background-color:green;
+}
+#feld2{
+	background-color:white;
+}
+#feld3{
+	background-color:red;
+}
+#de{
+	display:none;
+}
+#fr{
+	display:none;
+}
+@media (min-width:768px){	/*breakpoint zu Tablet*/
+	body{
+		margin:2em;
+	}
+	#flag{
+		flex-direction:column;
+	}
+	.feld{
+	height:10vh;
+	width:100%;
+}
+	#feld1{
+		background-color:black;
+	}
+	#feld2{
+		background-color:red;
+	}
+	#feld3{
+		background-color:gold;
+	}
+	#it{
+	display:none;
+	}
+	#de{
+		display:block;
+	}
+}
+@media (min-width:992px){	/*breakpoint zu Laptop*/
+	body{
+		margin:4em;
+	}
+	#flag{
+		flex-direction:row;
+	}
+	.feld{
+	height:30vh;
+	width:33vw;
+	}
+	#feld1{
+	background-color:blue;
+	}
+	#feld2{
+	background-color:white;
+	}
+	#feld3{
+		background-color:red;
+	}
+	#de{
+		display:none;
+	}
+	#fr{
+		display:block;
+	}
+}
